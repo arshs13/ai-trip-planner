@@ -11,11 +11,12 @@ function Hero() {
         <span className='text-[#f56551]'>Discover Your Next Adventure with AI:</span> Personalized Itineraries at Your Fingertips</h1>
       <p className='text-xl text-gray-500 text-center'>Your personal trip planner and travel curator, creating custom itineraries tailored to your interests and budget.</p>
 
-      <Link to={'/create-trip'}>
-        <Button> Get Started, It's Free </Button>
+      <Link to='/create-trip' className='relative z-20 mb-6 md:mb-0'>
+        <Button className="h-11 px-7 text-md"> Get Started, It's Free </Button>
       </Link>
 
-      <img src='/landing.png' className='-mt-40' />
+      <img src='/landing.png' className='max-w-[85vw] md:max-w-[600px] md:-mt-40 -mt-8 lg:max-w-[1000px]' // Adjusted negative margins
+        style={{ transform: 'translateY(20px)' }} />
     </div>
   )
 }

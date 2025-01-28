@@ -48,7 +48,11 @@ const GetUserProfile = (tokenInfo) => {
 
   return (
     <div className='p-3 shadow-sm flex justify-between items-center px-5'>
-      <img src='/placeholder.svg' />
+      <a href='/'>
+      <Button variant="ghost">
+      <img src='/logo.svg' />
+      </Button>
+      </a>
       <div>
         {user ?
           <div className='flex items-center gap-3'>
@@ -77,7 +81,7 @@ const GetUserProfile = (tokenInfo) => {
           <Button onClick={()=>setOpenDialog(true)}>Sign In</Button>
         }
       </div>
-      <Dialog open={openDialog}>
+      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
 
                 <DialogContent>
                     <DialogHeader>
