@@ -48,7 +48,7 @@ const GetUserProfile = (tokenInfo) => {
 
   return (
     <div className='p-3 shadow-sm flex justify-between items-center px-5'>
-      <img src='/logo.svg' />
+      <img src='/placeholder.svg' />
       <div>
         {user ?
           <div className='flex items-center gap-3'>
