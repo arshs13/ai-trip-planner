@@ -49,10 +49,16 @@ const GetUserProfile = (tokenInfo) => {
   return (
     <div className='p-3 shadow-sm flex justify-between items-center px-5'>
       <a href='/'>
-      <Button variant="ghost">
-      <img src='/logo.svg' />
-      </Button>
-      </a>
+  <Button variant="ghost" className="p-0 hover:bg-transparent">
+    <div className="w-[200px] xs:w-[160px] md:w-[180px] h-auto aspect-[1750/398]"> {/* 4.44:1 ratio */}
+      <img 
+        src='/logo.png' 
+        className="w-full h-full object-contain" 
+        alt="Logo"
+      />
+    </div>
+  </Button>
+</a>
       <div>
         {user ?
           <div className='flex items-center gap-3'>
