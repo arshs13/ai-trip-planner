@@ -93,7 +93,7 @@ const GetUserProfile = (tokenInfo) => {
                     <DialogHeader>
 
                         <DialogDescription>
-                            <img src="/logo.svg" />
+                            <img src="/logo.png" />
                             <h2 className='font-bold text-lg mt-7'>Sign-In With Google</h2>
                             <p>Securely sign-in to the app with Google authentication</p>
 
