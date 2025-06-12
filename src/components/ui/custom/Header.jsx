@@ -20,7 +20,7 @@ import axios from 'axios';
 
 function Header() {
 
-  const user = JSON.parse(localStorage.getItem('user'));
+  const user = JSON.parse(localStorage.getItem('user') || 'null');
   const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
@@ -93,7 +93,10 @@ const GetUserProfile = (tokenInfo) => {
                     <DialogHeader>
 
                         <DialogDescription>
-                            <img src="/logo.svg" />
+                            <img
+                              src="/logo.png"
+                              alt="Logo"
+                            />
                             <h2 className='font-bold text-lg mt-7'>Sign-In With Google</h2>
                             <p>Securely sign-in to the app with Google authentication</p>
 
