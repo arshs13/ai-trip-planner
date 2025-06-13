@@ -89,24 +89,26 @@ function Header() {
       </div>
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
 
-        <DialogContent className="relative">
-          {/* Logo in top-right */}
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="absolute top-4 right-4 w-12 h-auto"
-          />
-
+        <DialogContent>
           <DialogHeader>
-            <DialogDescription className="pt-12">
+
+            <DialogDescription className="relative">
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="absolute top-0 right-0 w-12 h-auto"
+              />
               <h2 className='font-bold text-lg mt-7'>Sign-In With Google</h2>
               <p>Securely sign-in to the app with Google authentication</p>
 
               <Button
+
                 onClick={login}
                 className='w-full mt-5 flex gap-2 items-center'>
+
                 <FcGoogle className='h-7 w-7' />
                 Sign-In With Google
+
               </Button>
             </DialogDescription>
           </DialogHeader>
