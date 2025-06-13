@@ -93,11 +93,13 @@ const GetUserProfile = (tokenInfo) => {
                     <DialogHeader>
 
                         <DialogDescription>
-                            <img 
-                              src='/logo.png'
-                              className="w-full h-full object-contain"
-                              alt="Logo" 
-                            />
+                            <div className="w-[160px] md:w-[180px] h-auto aspect-[1750/398]"> {/* 4.44:1 ratio */}
+                              <img
+                                src='/logo.png'
+                                className="w-full h-full object-contain"
+                                alt="Cypress Logo"
+                              />
+                            </div>
                             <h2 className='font-bold text-lg mt-7'>Sign-In With Google</h2>
                             <p>Securely sign-in to the app with Google authentication</p>
 
